@@ -1,0 +1,87 @@
+/* ===== Scrollbar CSS ===== */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: none;
+  border: none;
+}
+
+/* *************** */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px;
+  position: fixed;
+  border-bottom: 1px solid #0193B8;
+}
+header .logo a {
+  display: flex;
+  align-items: center;
+  color: #0193B8;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+header .logo a img {
+  width: 40px;
+  margin-right: 5px;
+}
+header button {
+  background: none;
+  border: none;
+}
+header button .fa-bars {
+  color: #0193B8;
+}
+header button .hidden {
+  display: none;
+}
+
+menu {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+  justify-content: center;
+}
+menu ul {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+menu ul li {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
