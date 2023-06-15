@@ -44,44 +44,62 @@ header .logo a {
   display: flex;
   align-items: center;
   color: #0193B8;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 22px;
 }
 header .logo a img {
   width: 40px;
   margin-right: 5px;
 }
-header button {
+header .buttonsHeader button {
   background: none;
   border: none;
+  padding: 10px;
+  margin-left: 10px;
 }
-header button .fa-bars {
+header .buttonsHeader button .fa-language {
   color: #0193B8;
 }
-header button .hidden {
+header .buttonsHeader button .fa-language:active {
+  transform: scale(0.95);
+}
+header .buttonsHeader button .fa-bars {
+  color: #0193B8;
+}
+header .buttonsHeader button .hidden {
   display: none;
 }
 
 menu {
+  background: #0193B8;
   position: absolute;
   top: 50px;
   width: 100%;
   padding: 0;
   margin: 0;
-  display: none;
   justify-content: center;
+}
+menu.hidden {
+  display: none;
 }
 menu ul {
   text-align: center;
-  font-weight: 500;
-  font-size: 14px;
+  color: #f0f0f0;
+  font-size: 15px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 menu ul li {
   padding: 10px;
+}
+menu ul .terms {
+  font-size: 11px;
+  color: #e0e0e0;
+}
+menu ul .terms small {
+  margin: 0px 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
