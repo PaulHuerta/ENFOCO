@@ -17,10 +17,10 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+  // a {
+  //   color: inherit;
+  //   text-decoration: none;
+  // }
 }
 
 html,
@@ -31,13 +31,13 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
   padding: 10px;
-  // position: fixed;
+  position: fixed;
   border-bottom: 2px solid #0193b83e;
 
   .logo {
@@ -48,6 +48,7 @@ header {
       font-weight: 600;
       letter-spacing: 2px;
       font-size: 22px;
+      text-decoration: none;
       img {
         width: 40px;
         margin-right: 5px;
@@ -82,19 +83,17 @@ header {
 menu {
   background: $color1;
   position: absolute;
-  top: 50px;
+  top: 68px;
   width: 100%;
   padding: 0;
   margin: 0;
   justify-content: center;
-
   &.hidden {
     display: none;
   }
   ul {
     text-align: center;
-    color: $text;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -102,23 +101,97 @@ menu {
       padding: 10px;
     }
 
+    a {
+      color: $text;
+      text-decoration: none;
+    }
+
     .terms {
-      font-size: 11px;
+      font-size: 12px;
       color: #e0e0e0;
       small {
-        margin: 0px 5px;
+        margin: 0px 10px;
       }
     }
   }
 }
-main {
-  //   margin-top: 60px;
 
+main {
   .section1 {
+    height: 100vh;
+    width: 100%;
     text-align: center;
     color: $text2;
-    img{
-      width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    justify-content: space-evenly;
+
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+
+    h2 {
+      color: $text2;
+      margin: 25px 0px;
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0px;
+      color: $text2;
+      text-align: center;
+      font-size: 16px;
+      width: 80%;
+      font-weight: 500;
+      line-height: 25px;
+      .buttonRegistro {
+        margin: 30px;
+        background: $color1;
+        color: #ffffff;
+        border: none;
+        padding: 18px 50px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+.section2 {
+  border-top: 1px solid #003c4c3f;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    font-size: 17px;
+    line-height: 25px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+footer {
+  display: none;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: $text2;
+  div {
+    margin: 2px;
+
+    a {
+      color: inherit;
+      text-decoration: 0;
     }
   }
 }
