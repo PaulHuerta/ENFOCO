@@ -70,7 +70,7 @@ header .buttonsHeader button .hidden {
 
 menu {
   background: #0193B8;
-  position: absolute;
+  position: fixed;
   top: 70px;
   width: 100%;
   padding: 0;
