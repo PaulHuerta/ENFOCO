@@ -98,12 +98,12 @@ if (!empty($_POST)) {
     <div class="menuLang hidden" id="menuLang">
         <ul>
             <li>
-                <a href="#">
+                <a href="en/">
                     EN
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../">
                     ES
                 </a>
             </li>
