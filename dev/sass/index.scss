@@ -72,7 +72,7 @@ header {
       border: none;
       padding: 10px;
       margin-left: 10px;
-
+      cursor: pointer;
       .fa-language {
         color: $color1;
         &:active {
@@ -133,17 +133,16 @@ menu {
   top: 70px;
   width: 25%;
   right: 10%;
-
+  cursor: pointer;
   &.hidden {
     display: none;
   }
 
   ul {
     list-style: none;
-    
-    li{
-      
-      a{
+
+    li {
+      a {
         color: $text;
         text-decoration: none;
       }
@@ -166,6 +165,9 @@ main {
     img {
       width: 100%;
       height: fit-content;
+      @include desktop {
+        width: 40%;
+      }
     }
 
     h2 {
@@ -181,6 +183,9 @@ main {
       text-align: center;
       font-size: 16px;
       width: 80%;
+      @include desktop {
+        width: 40%;
+      }
       font-weight: 500;
       line-height: 25px;
       .buttonRegistro {
@@ -218,6 +223,9 @@ main {
     margin: auto;
     text-align: center;
     width: 80%;
+    @include desktop {
+      width: 30%;
+    }
   }
 }
 
