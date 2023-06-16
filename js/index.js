@@ -15,7 +15,7 @@ buttonLanguage.addEventListener("click", function () {
 Swal.fire({
   title: "Terminos y Condiciones.",
   icon:"info",
-  html: "Para navegar en el sitio debes aceptar los <a href=\"/terms.html\">términos y condiciones</a>",
+  html: "Para navegar en el sitio debes aceptar los <a href=\"terms.html\">términos y condiciones</a>",
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
