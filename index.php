@@ -80,12 +80,12 @@ if (!empty($_POST)) {
             </li> -->
             <li class="terms">
                 <small>
-                    <a href="terms.html">
+                    <a href="terms.php">
                         Terminos y Condiciones.
                     </a>
                 </small>
                 <small>
-                    <a href="privacy.html">
+                    <a href="privacy.php">
                         Aviso de Privacidad.
                     </a>
                 </small>
@@ -159,9 +159,9 @@ if (!empty($_POST)) {
                 <textarea name="mas" id="" placeholder="Cuales son tus gustos, pasatiempos, debilidades,fortalezas,..." required></textarea>
                 <br>
                 <label for="#">Coloca 3 objetivos en orden prioritario.</label>
-                <input type="text" placeholder="1.- Objetivo mas importante..." required name="obj1">
-                <input type="text" placeholder="2.- Segundo Objetivo..." required name="obj2">
-                <input type="text" placeholder="3.- Tercer Objetivo" required name="obj3">
+                <input type="text" placeholder="1.- ..." required name="obj1">
+                <input type="text" placeholder="2.- ..." required name="obj2">
+                <input type="text" placeholder="3.- ..." required name="obj3">
                 <button type="submit">
                     Enviar registro
                 </button>
