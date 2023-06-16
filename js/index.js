@@ -1,8 +1,15 @@
 var buttonMenu = document.getElementById("buttonMenu");
+var buttonLanguage = document.getElementById("buttonLanguage");
+
 var menu = document.getElementById("menu");
+var menuLang = document.getElementById("menuLang");
+
 
 buttonMenu.addEventListener("click", function () {
   menu.classList.toggle("hidden");
+});
+buttonLanguage.addEventListener("click", function () {
+  menuLang.classList.toggle("hidden");
 });
 
 Swal.fire({

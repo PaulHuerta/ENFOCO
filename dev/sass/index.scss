@@ -27,12 +27,14 @@ html,
 body {
   margin: 0;
   font-size: 16px;
+  // max-width: 360px;
+  // max-height: 800px;
 }
 
-.hidden{
+.hidden {
   width: 100vw;
   height: 200vh;
-  background: #0000007e;
+  background: #000000cc;
   position: absolute;
   z-index: 1;
 }
@@ -96,6 +98,7 @@ menu {
   padding: 0;
   margin: 0;
   justify-content: center;
+  border-bottom: 1px solid $text;
   &.hidden {
     display: none;
   }
@@ -119,6 +122,30 @@ menu {
       color: #e0e0e0;
       small {
         margin: 0px 10px;
+      }
+    }
+  }
+}
+
+.menuLang {
+  background: $color1;
+  position: fixed;
+  top: 70px;
+  width: 25%;
+  right: 10%;
+
+  &.hidden {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    
+    li{
+      
+      a{
+        color: $text;
+        text-decoration: none;
       }
     }
   }
@@ -157,6 +184,7 @@ main {
       font-weight: 500;
       line-height: 25px;
       .buttonRegistro {
+        display: block;
         margin: 30px;
         background: $color1;
         color: #ffffff;
@@ -165,6 +193,12 @@ main {
         font-size: 18px;
         font-weight: 500;
         border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:active {
+          transform: scale(0.95);
+        }
       }
     }
   }
@@ -187,26 +221,72 @@ main {
   }
 }
 
-footer {
-  display: none;
-  margin-top: 30px;
+.section3 {
+  background: $color1;
+  height: 100vh;
   width: 100%;
-  text-align: center;
-  font-size: 12px;
-  color: $text2;
-  div {
-    margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: $text;
+  }
+  form {
+    width: 80%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label {
+      color: $text;
+    }
 
-    a {
-      color: inherit;
-      text-decoration: 0;
+    textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      padding: 15px 20px;
+      border-radius: 5px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 15px 20px;
+      margin: 5px 0px;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin: 15px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $text;
+      background: #273b70;
+      cursor: pointer;
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
 }
 
-.termsPage{
+.termsPage {
   padding: 70px 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  h1 {
+    text-align: center;
+  }
 }

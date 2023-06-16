@@ -28,7 +28,7 @@ body {
 .hidden {
   width: 100vw;
   height: 200vh;
-  background: #0000007e;
+  background: #000000cc;
   position: absolute;
   z-index: 1;
 }
@@ -84,6 +84,7 @@ menu {
   padding: 0;
   margin: 0;
   justify-content: center;
+  border-bottom: 1px solid #f0f0f0;
 }
 menu.hidden {
   display: none;
@@ -108,6 +109,24 @@ menu ul .terms {
 }
 menu ul .terms small {
   margin: 0px 10px;
+}
+
+.menuLang {
+  background: #0193B8;
+  position: fixed;
+  top: 70px;
+  width: 25%;
+  right: 10%;
+}
+.menuLang.hidden {
+  display: none;
+}
+.menuLang ul {
+  list-style: none;
+}
+.menuLang ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 main .section1 {
@@ -141,6 +160,7 @@ main .section1 p {
   line-height: 25px;
 }
 main .section1 p .buttonRegistro {
+  display: block;
   margin: 30px;
   background: #0193B8;
   color: #ffffff;
@@ -149,6 +169,11 @@ main .section1 p .buttonRegistro {
   font-size: 18px;
   font-weight: 500;
   border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+main .section1 p .buttonRegistro:active {
+  transform: scale(0.95);
 }
 
 .section2 {
@@ -168,20 +193,61 @@ main .section1 p .buttonRegistro {
   width: 80%;
 }
 
-footer {
-  display: none;
-  margin-top: 30px;
+.section3 {
+  background: #0193B8;
+  height: 100vh;
   width: 100%;
-  text-align: center;
-  font-size: 12px;
-  color: #003C4C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-footer div {
-  margin: 2px;
+.section3 h3 {
+  color: #f0f0f0;
 }
-footer div a {
-  color: inherit;
-  text-decoration: 0;
+.section3 form {
+  width: 80%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 form label {
+  color: #f0f0f0;
+}
+.section3 form textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.section3 form input,
+.section3 form select {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 5px 0px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.section3 form button {
+  margin: 15px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f0f0f0;
+  background: #273b70;
+  cursor: pointer;
+}
+.section3 form button:active {
+  transform: scale(0.95);
 }
 
 .termsPage {
@@ -189,6 +255,9 @@ footer div a {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.termsPage h1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
